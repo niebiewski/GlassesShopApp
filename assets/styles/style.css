@@ -1,0 +1,151 @@
+:root {
+    --profile-menu-radius: 20px;
+}
+
+* {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main-menu ul li {
+    float: left;
+}
+
+.main-menu ul li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;    
+}
+
+.main-menu ul li a:hover {
+    color: #111;
+}
+
+.profile-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.profile-menu ul li {
+    float: left;
+    color: white;
+    padding: 7px 14px;
+    background-color: #333;
+}
+
+.profile-menu ul li:first-child {
+    border-top-left-radius: var(--profile-menu-radius);
+    border-bottom-left-radius: var(--profile-menu-radius);
+}
+
+.profile-menu ul li:last-child {
+    border-top-right-radius: var(--profile-menu-radius);
+    border-bottom-right-radius: var(--profile-menu-radius);
+}
+
+.profile-menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+.offer {
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.offer-item {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.offer-item__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-item__header-bargin {
+    color: #333;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.offer-item__header-quantity {
+    color: #333;
+    font-weight: 600;
+    font-size: 0.78rem;
+}
+
+.offer-item__footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.offer-item__footer-model {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.offer-item__footer-producer {
+    color: #333;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.offer-item__footer-price {
+    color: #111;
+    font-weight: bold;
+}
